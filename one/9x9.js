@@ -28,14 +28,14 @@ function separateData(datas){
             let data = '<li>'+datas[i]+'</li>'
             data_wrap.innerHTML+=data;
         }
-        showData(j, data_wrap);
+        showData(data_wrap);
         separa_n+=9
     }
 }
 
 // --- views
 
-function showData(num ,data_wrap){
+function showData(data_wrap){
     let main = document.getElementById('js_main');
     main.appendChild(data_wrap)
 }
