@@ -1,0 +1,182 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 以上為CSS Reset */
+
+img{
+width:100%;
+height:auto;
+display:block; //解決圖片下方多餘空白
+}
+
+*,*::before,*::after{
+box-sizing:border-box;
+}
+
+a{
+text-decoration:none;
+color: white;}
+
+li{
+		list-style: none;
+}
+
+/* public setting */
+/* body{
+    
+} */
+
+.d-flex{
+    display: flex;
+    
+}
+
+/* content */
+h1{
+    font-size:56px;
+}
+
+h2{
+    font-size: 128px;
+    display: inline;
+    text-shadow:
+    2px 1px 0px #fff,
+    4px 3px 0px #F0F0F0;
+                
+}
+
+main{
+    color:#2EB738;
+    width: 1280px;
+    margin: 0 auto; 
+    background:#F0F0F0;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 60px 70px;
+}
+
+.topic{
+    width: 280px;
+    height: 366px;
+    border-top:1px solid #2EB738;
+    border-bottom:1px solid #2EB738;
+    flex-direction:column;
+    align-items: center;
+    margin: 20px 15px;
+    position: relative;
+    margin: 0 50px;
+}
+
+.topic h1{
+    padding-top: 113.5px;
+    line-height: 84px;
+}
+
+.topic p{
+    padding-bottom: 118.5px;
+    line-height: 36px;
+}
+
+.topic span{
+    position: absolute;
+}
+
+.topic_corner_1{
+    left:-20px;
+    top:-10px;
+}
+
+.topic_corner_2{
+    right:-20px;
+    top:-10px;
+}
+
+.topic_corner_3{
+    left:-20px;
+    bottom:-8px;
+}
+
+.topic_corner_4{
+    right:-20px;
+    bottom:-8px;
+}
+
+
+.major{
+    width: 350px;
+    height: 366px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 15px;
+    background:#fff;
+    border-radius: 40% 0px 20px 0px;
+    padding: 64px 40px;
+    box-shadow: 0 3px 10px #D8D8D8;
+}
+
+.major li{
+    width: 105px;
+    font-size: 24px;
+    letter-spacing: 6px;
+    line-height: 1.5em;
+}
+
+.footer{
+    background-color:#2EB738 ;
+    color:#fff;
+    
+    
+}
+
+.footer p {
+    font-size: 16px;
+    padding: 8px 85px 8px 843px;
+}
